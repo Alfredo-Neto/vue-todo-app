@@ -1,7 +1,9 @@
 <template>
   <div class="tasks">
     <ul>
-        <Task />
+        <li v-for="task in tasks" :key="task.id">
+            <Task :title="task.title" :content="task.content"/>
+        </li>
     </ul>
   </div>
 </template>
@@ -10,9 +12,17 @@
 
 import Task from '@/components/Task.vue'
 export default {
+  name: 'Tasks',
+  components: {
+    Task
+  },
   data() {
     return {
-      component: Task
+      tasks: [
+          {id: 0, title: 'Minha task 1', content: 'jogar o lixo'},
+          {id: 1, title: 'Minha task 2', content: 'lavar a louca'},
+          {id: 2, title: 'Minha task 3', content: 'programar'}
+      ],
     }
   },
 }
@@ -20,18 +30,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>

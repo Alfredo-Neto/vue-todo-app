@@ -1,30 +1,20 @@
 <template>
   <div id="app">
-    <Input />
-    <Tasks />
+    <h1>To-Do List</h1>
+      <Tasks />
   </div>
 </template>
 
 <script>
 
-import Input from '@/components/Input'
-import Tasks from '@/components/Tasks'
+import Tasks from '@/components/Tasks.vue'
 export default {
-  data() {
-    return {
-      component: {Input, Tasks}
-    }
-  },  
+  components: {
+    Tasks
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
