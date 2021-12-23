@@ -39,8 +39,8 @@ export default {
       console.log(this.tasks);
     },
     persistTask(){
-      const parsedTask = JSON.stringify(this.tasks)
-      localStorage.setItem('tasks', parsedTask)
+      const parsedTasks = JSON.stringify(this.tasks)
+      localStorage.setItem('tasks', parsedTasks)
     },
   },
 }
