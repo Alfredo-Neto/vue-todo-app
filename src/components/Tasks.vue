@@ -1,8 +1,8 @@
 <template>
   <div class="tasks">
     <ul>
-        <li v-for="task in tasks" :key="task.id">
-            <Task :name="task.name"/>
+        <li v-for="(task, n) in tasks" :key="task.name">
+            <Task :task="task" @removeEvent="removeTask(n)"/>
         </li>
     </ul>
   </div>
@@ -13,10 +13,16 @@
 import Task from '@/components/Task.vue'
 export default {
   props: {
-    tasks: {type: Array, required: true}
+    tasks: {type: Array, required: true},
   },
   components: {
     Task
+  },
+  methods: {
+     removeTask(task){
+      this.tasks.splice(task, 1)
+      this.$emit('persistEvent', this.tasks)
+    },
   },
 }
 </script>

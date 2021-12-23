@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     updateTasks(){
-      this.$emit('addTask', this.name)
+      this.$emit('addTaskEvent', this.name)
       this.name = ''
     },
   },
