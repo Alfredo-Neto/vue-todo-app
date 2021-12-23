@@ -1,5 +1,18 @@
 # vue-todo-app
 
+## About
+This is a little todo-app made with VueJs for learning purposes only
+
+## User Stories
+  [x] User can add new tasks
+  [x] User can delete tasks
+  [x] User can mark tasks as done/pending
+  [x] On refreshing, the application state is persisted through LocalStorage
+  
+## Main Concepts Learned:
+
+  
+
 ## Project setup
 ```
 npm install
@@ -9,16 +22,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
