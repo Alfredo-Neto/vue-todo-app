@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="task">
     <p>{{ task.name }}</p>
-    <button type="button" @click="removeEvent">Remover</button>
-    <input type="checkbox" @click="pendingEvent" :checked="task.pending">
+    <a type="button" @click="removeEvent">x</a>
+    <input type="checkbox" @click="pendingEvent" :checked="!task.pending">
   </div>
 </template>
 
@@ -24,5 +24,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.task {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
 
 </style>

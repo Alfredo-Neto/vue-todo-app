@@ -29,9 +29,6 @@ export default {
     togglePending(task){
       this.tasks[task]['pending'] = !this.tasks[task]['pending']
       this.persistEvent()
-      
-      console.log(`Mudou para: ${this.tasks[task]['pending']}`)
-      console.log(this.tasks[task])
     },
     persistEvent(){
       this.$emit('persistEvent', this.tasks)
@@ -44,5 +41,19 @@ export default {
 <style scoped>
 ul {
   list-style-type: none;
+}
+
+li {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 700px;
+  padding: 25px 100px;
+  margin: 20px 0;
+  background-color: rgba(238, 238, 238, 0.212);
+}
+
+li:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 </style>
