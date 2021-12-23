@@ -1,7 +1,7 @@
 <template>
   <form>
-    <input type="text" v-model="name" @keydown.enter.prevent="updateTasks">
-    <button type="button" @click="updateTasks">+</button>
+    <input type="text" v-model="name" @keydown.enter.prevent="updateTasksEvent">
+    <button type="button" @click="updateTasksEvent">+</button>
   </form>
 </template>
 
@@ -16,7 +16,7 @@ export default {
     tasks: {type: Array, required: true}
   },
   methods: {
-    updateTasks(){
+    updateTasksEvent(){
       this.$emit('addTaskEvent', this.name)
       this.name = ''
     },

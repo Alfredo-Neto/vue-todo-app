@@ -2,7 +2,10 @@
   <div class="tasks">
     <ul>
         <li v-for="(task, n) in tasks" :key="task.name">
-            <Task :task="task" @removeEvent="removeTask(n)"/>
+            <Task 
+            :task="task" 
+            @removeEvent="removeTask(n)" 
+            @pendingEvent="togglePending(n)" />
         </li>
     </ul>
   </div>
@@ -19,10 +22,20 @@ export default {
     Task
   },
   methods: {
-     removeTask(task){
+    removeTask(task){
       this.tasks.splice(task, 1)
-      this.$emit('persistEvent', this.tasks)
+      this.persistEvent()
     },
+    togglePending(task){
+      this.tasks[task]['pending'] = !this.tasks[task]['pending']
+      this.persistEvent()
+      
+      console.log(`Mudou para: ${this.tasks[task]['pending']}`)
+      console.log(this.tasks[task])
+    },
+    persistEvent(){
+      this.$emit('persistEvent', this.tasks)
+    }
   },
 }
 </script>

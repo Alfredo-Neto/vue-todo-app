@@ -1,7 +1,8 @@
 <template>
   <div>
     <p>{{ task.name }}</p>
-    <button type="button" @click="removeTask">Remover</button>
+    <button type="button" @click="removeEvent">Remover</button>
+    <input type="checkbox" @click="pendingEvent" :checked="task.pending">
   </div>
 </template>
 
@@ -11,8 +12,11 @@ export default {
     task: { required: true, type: Object },
   },
   methods: {
-    removeTask(){
+    removeEvent(){
       this.$emit('removeEvent', this.task)
+    },
+    pendingEvent(){
+      this.$emit('pendingEvent', this.task)
     },
   },
 }
