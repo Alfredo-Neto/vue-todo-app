@@ -13,10 +13,10 @@ This is a little todo-app made with VueJs for learning purposes only
 
   - Vue CLI
   - Vue components
-  - passing props
+  - Passing props
   - Filtering props
-  - emitting custom events
-  - lifecycle hooks
+  - Emitting custom events
+  - Lifecycle hooks
   - LocalStorage from the Vue context
   - Scoped CSS
 
