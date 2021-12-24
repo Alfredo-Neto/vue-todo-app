@@ -3,6 +3,8 @@
 ## About
 This is a little todo-app made with VueJs for learning purposes only
 
+![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
+
 ## User Stories
  - [x] User can add new tasks
  - [x] User can delete tasks
