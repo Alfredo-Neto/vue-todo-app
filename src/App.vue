@@ -77,7 +77,6 @@ input[type=text] {
 }
 
 input[type=text]:focus { 
-    outline:none;
     border-color:#4A00E0;
     box-shadow:0 0 10px #8E2DE2;
 }
@@ -98,6 +97,7 @@ button {
   text-decoration: none;
   margin: 10px;
   transition-duration: 0.4s;
+  font-size: 1rem;
   border-radius: 10px;
   cursor: pointer;
 }
