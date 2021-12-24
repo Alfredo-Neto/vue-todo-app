@@ -11,7 +11,14 @@ This is a little todo-app made with VueJs for learning purposes only
   
 ## Main Concepts Learned:
 
-  
+  - Vue CLI
+  - Vue components
+  - passing props
+  - Filtering props
+  - emitting custom events
+  - lifecycle hooks
+  - LocalStorage from the Vue context
+  - Scoped CSS
 
 ## Project setup
 ```
