@@ -34,7 +34,7 @@ export default {
       if(!taskName) {
         return
       }
-      this.tasks.unshift({name: taskName, pending: true});
+      this.tasks.push({name: taskName, pending: true});
       this.persistTask()
     },
     persistTask(){
