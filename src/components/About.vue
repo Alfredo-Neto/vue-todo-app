@@ -1,6 +1,7 @@
 <template>
   <div id="about">
       <h1>This is a vue-router example</h1>
+      <p>Testing...</p>
   </div>
 </template>
 
