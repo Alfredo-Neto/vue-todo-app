@@ -10,6 +10,7 @@ This is a little todo-app made with VueJs for learning purposes only
  - [x] User can delete tasks
  - [x] User can mark tasks as done/pending
  - [x] On refreshing, the application state is persisted through LocalStorage
+ - [x] User can switch between Home and About pages 
   
 ## Main Concepts Learned:
 
@@ -21,6 +22,7 @@ This is a little todo-app made with VueJs for learning purposes only
   - Lifecycle hooks
   - LocalStorage from the Vue context
   - Scoped CSS
+  - Vue Router(basics)
 
 ## Project setup
 ```
