@@ -3,7 +3,7 @@
 ## About:
 This is a little todo-app made with VueJs for learning purposes only
 
-![Alt text](https://user-images.githubusercontent.com/52950354/147318475-df8a9c6e-d67a-4403-bd86-3b2e52fb334c.png)
+![Alt text](https://github.com/Alfredo-Neto/vue-todo-app/blob/main/src/assets/Screenshot%20from%202022-01-04%2012-54-24.png)
 
 ## User Stories:
  - [x] User can add new tasks
