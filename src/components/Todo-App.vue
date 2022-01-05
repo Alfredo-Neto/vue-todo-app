@@ -101,7 +101,7 @@ button:hover {
 }
 
 #todo-app h1 {
-  margin-right: 34px;
+  margin-right: 35px;
 }
 
 </style>
