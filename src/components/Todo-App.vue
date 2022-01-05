@@ -100,4 +100,8 @@ button:hover {
   cursor: pointer;
 }
 
+#todo-app h1 {
+  margin-right: 35px;
+}
+
 </style>
